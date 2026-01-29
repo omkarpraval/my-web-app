@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Web App</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            text-align: center;
+            padding-top: 60px;
+        }
+
+        .container {
+            background: white;
+            width: 60%;
+            margin: auto;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: #2c3e50;
+        }
+
+        .info {
+            margin-top: 20px;
+            color: #555;
+        }
+
+        .time {
+            margin-top: 15px;
+            font-weight: bold;
+            color: #16a085;
+        }
+
+        footer {
+            margin-top: 30px;
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Welcome to My Web Application</h1>
+
+        <p class="info">
+            This website is deployed using <b>GitHub Pages</b> as part of a DevOps experiment.
+        </p>
+
+        <p class="time" id="time"></p>
+
+        <h3>DevOps Concepts Used</h3>
+        <ul style="list-style: none; padding: 0;">
+            <li>✔ Version Control using Git</li>
+            <li>✔ Collaboration using GitHub</li>
+            <li>✔ Continuous Deployment</li>
+        </ul>
+
+        <footer>
+            DevOps & MLOps Lab – Experiment 1
+        </footer>
+    </div>
+
+    <script>
+        const now = new Date();
+        document.getElementById("time").innerHTML =
+            "Current Date & Time: " + now.toLocaleString();
+    </script>
+
+</body>
+</html>
